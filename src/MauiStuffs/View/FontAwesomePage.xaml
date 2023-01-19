@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:faIcons="clr-namespace:MauiStuffs.Models.FontAwesome"
+             x:Class="MauiStuffs.View.FontAwesomePage"
+             Shell.NavBarIsVisible="False">
+    
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="10,0"
+            VerticalOptions="Start">
+
+            <HorizontalStackLayout 
+                HeightRequest="100"
+                HorizontalOptions="Center"
+                Spacing="10">
+                <Image
+                    Source="dotnet_bot.png"
+                    SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                    HeightRequest="50"
+                    VerticalOptions="Center" />
+
+                <Label
+                    Text="Hello, let's use Font Awesome"
+                    SemanticProperties.HeadingLevel="Level1"
+                    FontSize="20"
+                    VerticalOptions="Center"
+                    HorizontalTextAlignment="Center" />
+            </HorizontalStackLayout>
+
+            <Label Text="Buttons:" HorizontalOptions="Center"/>
+
+            <Frame 
+                Padding="0" 
+                BackgroundColor="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Blue100Accent}}"
+                WidthRequest="190"
+                HeightRequest="40"
+                CornerRadius="20"
+                BorderColor="{AppThemeBinding Light={StaticResource Blue100Accent}, Dark={StaticResource White}}">
+                <Grid ColumnDefinitions="Auto,*">
+                    <Label
+                        Margin="8,0,0,0"
+                        FontFamily="FaBrands"
+                        Text="{x:Static faIcons:FaBrandsIcons.Facebook}"
+                        SemanticProperties.HeadingLevel="Level1"
+                        FontSize="25"
+                        TextColor="{AppThemeBinding Light={StaticResource Blue100Accent}, Dark={StaticResource White}}"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"/>
+                    <Label 
+                        Margin="0,0,8,0"
+                        Grid.Column="1"
+                        Text="Entrar com Facebook"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"/>
+                    <Button Grid.ColumnSpan="2" BackgroundColor="Transparent"/>
+                </Grid>
+            </Frame>
+
+            <HorizontalStackLayout
+                Spacing="10"
+                HorizontalOptions="Center">
+                <Button
+                    HeightRequest="60"
+                    WidthRequest="60"
+                    CornerRadius="30"
+                    FontSize="30"
+                    FontFamily="FaBrands"
+                    BackgroundColor="Blue"
+                    Text="{x:Static faIcons:FaBrandsIcons.Facebook}" />
+                <Button
+                    HeightRequest="60"
+                    WidthRequest="60"
+                    CornerRadius="30"
+                    FontSize="30"
+                    FontFamily="FaBrands"
+                    BackgroundColor="Black"
+                    Text="{x:Static faIcons:FaBrandsIcons.Github}" />
+                <Button
+                    HeightRequest="60"
+                    WidthRequest="60"
+                    CornerRadius="30"
+                    FontSize="30"
+                    FontFamily="FaBrands"
+                    BackgroundColor="CornflowerBlue"
+                    Text="{x:Static faIcons:FaBrandsIcons.Google}" />
+            </HorizontalStackLayout>
+
+            <Label Text="Just Labels:" HorizontalOptions="Center"/>
+
+            <HorizontalStackLayout
+                Spacing="10"
+                HorizontalOptions="Center">
+                <Label
+                    FontFamily="FaBrands"
+                    Text="{x:Static faIcons:FaBrandsIcons.Facebook}"
+                    SemanticProperties.HeadingLevel="Level1"
+                    FontSize="25"
+                    TextColor="Blue"
+                    HorizontalOptions="Center" />
+                <Label
+                    FontFamily="FaBrands"
+                    Text="{x:Static faIcons:FaBrandsIcons.Linkedin}"
+                    SemanticProperties.HeadingLevel="Level1"
+                    FontSize="25"
+                    TextColor="Blue"
+                    HorizontalOptions="Center" />
+                <Label
+                    FontFamily="FaBrands"
+                    Text="{x:Static faIcons:FaBrandsIcons.Instagram}"
+                    SemanticProperties.HeadingLevel="Level1"
+                    FontSize="25"
+                    TextColor="HotPink"
+                    HorizontalOptions="Center" />
+                <Label
+                    FontFamily="FaBrands"
+                    Text="{x:Static faIcons:FaBrandsIcons.Apple}"
+                    SemanticProperties.HeadingLevel="Level1"
+                    FontSize="25"
+                    TextColor="Black"
+                    HorizontalOptions="Center" />
+                <Label
+                    FontFamily="FaRegular"
+                    Text="{x:Static faIcons:FaRegularIcons.Heart}"
+                    SemanticProperties.HeadingLevel="Level1"
+                    FontSize="25"
+                    TextColor="Red"
+                    HorizontalOptions="Center" />
+                <Label
+                    FontFamily="FaSolid"
+                    Text="{x:Static faIcons:FaSolidIcons.Heart}"
+                    SemanticProperties.HeadingLevel="Level1"
+                    FontSize="25"
+                    TextColor="Red"
+                    HorizontalOptions="Center" />
+                <Label
+                    FontFamily="FaSolid"
+                    Text="{x:Static faIcons:FaSolidIcons.BellConcierge}"
+                    SemanticProperties.HeadingLevel="Level1"
+                    FontSize="25"
+                    TextColor="DarkSlateGray"
+                    HorizontalOptions="Center" />
+                <Label
+                    FontFamily="FaSolid"
+                    Text="{x:Static faIcons:FaSolidIcons.Filter}"
+                    SemanticProperties.HeadingLevel="Level1"
+                    FontSize="25"
+                    TextColor="DarkSlateGray"
+                    HorizontalOptions="Center" />
+                <Label
+                    FontFamily="FaSolid"
+                    Text="{x:Static faIcons:FaSolidIcons.ShareNodes}"
+                    SemanticProperties.HeadingLevel="Level1"
+                    FontSize="25"
+                    TextColor="OrangeRed"
+                    HorizontalOptions="Center" />
+                <Label
+                    FontFamily="FaSolid"
+                    Text="{x:Static faIcons:FaSolidIcons.User}"
+                    SemanticProperties.HeadingLevel="Level1"
+                    FontSize="25"
+                    TextColor="SlateGray"
+                    HorizontalOptions="Center" />
+                <Label
+                    FontFamily="FaSolid"
+                    Text="{x:Static faIcons:FaSolidIcons.EllipsisVertical}"
+                    SemanticProperties.HeadingLevel="Level1"
+                    FontSize="25"
+                    TextColor="DimGray"
+                    HorizontalOptions="Center" />
+            </HorizontalStackLayout>
+
+            <Button
+                x:Name="CounterBtn"
+                Text="Click me"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
